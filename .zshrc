@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/huangjiangtao/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 export TERM=xterm-256color
 
 
-export NVM_DIR="/Users/huangjiangtao/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export SSLKEYLOGFILE=~/tls/sslkeylog.log
