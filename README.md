@@ -9,4 +9,5 @@
 - settings.jar webstorm配置
 - [vim配置参考](http://github.com/Jerret321/vimrc)
 - [我的vs配置](https://gist.github.com/Jerret321/8a414db830ae63903082bf8e61ef626b) 基于`Settings Sync`的vs code配置 
+
 备注: 以上配置均属于个人配置，使用没问题，自定义请自行修改
