@@ -110,3 +110,7 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
+# npm 
+alias cnpm="npm --registry=https://registry.npm.taobao.org"
+alias server="python -m SimpleHTTPServer"
+alias vtCreate="sh /Users/jerret/Places/Company/Code/vue-tools-group/create.sh"
