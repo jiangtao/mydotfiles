@@ -112,5 +112,12 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
 # npm 
 alias cnpm="npm --registry=https://registry.npm.taobao.org"
-alias server="python -m SimpleHTTPServer"
-alias vtCreate="sh /Users/jerret/Places/Company/Code/vue-tools-group/create.sh"
+
+# yarn
+# set taobao
+alias 2cyarn="yarn config set registry https://registry.npm.taobao.org"
+alias 2yarn="yarn config delete registry"
+
+# android sdk config
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
