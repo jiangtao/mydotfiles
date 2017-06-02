@@ -90,27 +90,27 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export SSLKEYLOGFILE=~/tls/sslkeylog.log
-alias bsondump='~/lib/mongodb-3.2.6/bin/bsondump'
-alias mongo='~/lib/mongodb-3.2.6/bin/mongo'
-alias mongod='~/lib/mongodb-3.2.6/bin/mongod'
-alias mongodump='~/lib/mongodb-3.2.6/bin/mongodump'
-alias mongoexport='~/lib/mongodb-3.2.6/bin/mongoexport'
-alias mongofiles='~/lib/mongodb-3.2.6/bin/mongofiles'
-alias mongoimport='~/lib/mongodb-3.2.6/bin/mongoimport'
-alias mongooplog='~/lib/mongodb-3.2.6/bin/mongooplog'
-alias mongoperf='~/lib/mongodb-3.2.6/bin/mongoperf'
-alias mongorestore='~/lib/mongodb-3.2.6/bin/mongorestore'
-alias mongos='~/lib/mongodb-3.2.6/bin/mongos'
-alias mongosniff='~/lib/mongodb-3.2.6/bin/mongosniff'
-alias mongostat='~/lib/mongodb-3.2.6/bin/mongostat'
-alias mongotop='~/lib/mongodb-3.2.6/bin/mongotop'
+alias bsondump='/usr/local/Cellar/mongodb/3.2.10/bin/bsondump'
+alias mongo='/usr/local/Cellar/mongodb/3.2.10/bin/mongo'
+alias mongod='/usr/local/Cellar/mongodb/3.2.10/bin/mongod'
+alias mongodump='/usr/local/Cellar/mongodb/3.2.10/bin/mongodump'
+alias mongoexport='/usr/local/Cellar/mongodb/3.2.10/bin/mongoexport'
+alias mongofiles='/usr/local/Cellar/mongodb/3.2.10/bin/mongofiles'
+alias mongoimport='/usr/local/Cellar/mongodb/3.2.10/bin/mongoimport'
+alias mongooplog='/usr/local/Cellar/mongodb/3.2.10/bin/mongooplog'
+alias mongoperf='/usr/local/Cellar/mongodb/3.2.10/bin/mongoperf'
+alias mongorestore='/usr/local/Cellar/mongodb/3.2.10/bin/mongorestore'
+alias mongos='/usr/local/Cellar/mongodb/3.2.10/bin/mongos'
+alias mongosniff='/usr/local/Cellar/mongodb/3.2.10/bin/mongosniff'
+alias mongostat='/usr/local/Cellar/mongodb/3.2.10/bin/mongostat'
+alias mongotop='/usr/local/Cellar/mongodb/3.2.10/bin/mongotop'
 # mysql
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-# npm 
+# npm
 alias cnpm="npm --registry=https://registry.npm.taobao.org"
 
 # yarn
@@ -118,6 +118,10 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org"
 alias 2cyarn="yarn config set registry https://registry.npm.taobao.org"
 alias 2yarn="yarn config delete registry"
 
+
 # android sdk config
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
+
+# chrome headless
+alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
