@@ -90,6 +90,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export SSLKEYLOGFILE=~/tls/sslkeylog.log
+
+# android sdk config
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
+
+# mongo
 alias bsondump='/usr/local/Cellar/mongodb/3.2.10/bin/bsondump'
 alias mongo='/usr/local/Cellar/mongodb/3.2.10/bin/mongo'
 alias mongod='/usr/local/Cellar/mongodb/3.2.10/bin/mongod'
@@ -118,10 +124,8 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org"
 alias 2cyarn="yarn config set registry https://registry.npm.taobao.org"
 alias 2yarn="yarn config delete registry"
 
-
-# android sdk config
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
-
 # chrome headless
 alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+
+# jump.server
+alias 2applet="ssh -i ~/.ssh/huangjiangtao.pem huangjiangtao@jump.hb"
