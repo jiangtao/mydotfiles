@@ -25,6 +25,11 @@ modules=(
   yarn
   gulp
   phantomjs
+  eslint
+  eslint-plugin-vue
+  eslint-config-standard
+  eslint-plugin-import
+  eslint-plugin-node
 )
 
 echo "installing node modules..."
