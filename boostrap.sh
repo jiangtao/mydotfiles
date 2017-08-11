@@ -25,6 +25,7 @@ modules=(
   yarn
   gulp
   phantomjs
+  gtop
   eslint
   eslint-plugin-vue
   eslint-config-standard
