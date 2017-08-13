@@ -54,3 +54,8 @@ apps=(
 echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
+# create usual dirs
+mkdir ~/Places/Work
+mkdir ~/Places/Person
+
+
