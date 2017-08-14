@@ -118,6 +118,7 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
 # npm
 alias cnpm="npm --registry=https://registry.npm.taobao.org"
+alias rmnm="find . -name 'node_modules'  | xargs -I {} rm -fr  {}"
 
 # yarn
 # set taobao
