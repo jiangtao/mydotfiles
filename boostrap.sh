@@ -8,7 +8,7 @@ fi
 brew update
 
 # install tools
-brew install ripgrep git vim
+brew install ripgrep git vim autojump
 
 # Install nvm and node
 
