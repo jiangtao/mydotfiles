@@ -45,7 +45,7 @@ brew install caskroom/cask/brew-cask
 apps=(
   google-chrome-canary
   firefox
-  divvy
+# divvy
   visual-studio-code
 )
 
