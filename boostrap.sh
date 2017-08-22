@@ -8,7 +8,15 @@ fi
 brew update
 
 # install tools
-brew install ripgrep git vim autojump
+tools=(
+  ripgrep 
+  git 
+  vim 
+  autojump 
+  tree
+)
+
+brew install ${tools[@]}
 
 # Install nvm and node
 
@@ -45,7 +53,6 @@ brew install caskroom/cask/brew-cask
 apps=(
   google-chrome-canary
   firefox
-# divvy
   visual-studio-code
 )
 
