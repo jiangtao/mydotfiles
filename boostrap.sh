@@ -32,8 +32,8 @@ modules=(
   webpack
   yarn
   gulp
-  phantomjs
-  gtop
+#   phantomjs
+#   gtop
   eslint
   eslint-plugin-vue
   eslint-config-standard
