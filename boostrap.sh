@@ -54,6 +54,7 @@ apps=(
   google-chrome-canary
   firefox
   visual-studio-code
+  helm 
 )
 
 # Install apps to /Applications
