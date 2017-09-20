@@ -69,8 +69,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # create usual dirs
 
 echo "making dirs..."
-mkdir ~/Places/Work
-mkdir ~/Places/Person
+mkdir ~/places/work
+mkdir ~/places/person
 
 echo "Done."
 
