@@ -26,6 +26,10 @@
     },
     "parser": "babel-eslint",
     "rules": {
+        "indent": [
+            2,
+            2
+        ],
         "accessor-pairs": 2,
         "arrow-parens": [
             1,
@@ -175,7 +179,7 @@
         "no-proto": 2,
         "no-redeclare": 2,
         "no-regex-spaces": 2,
-        "no-return-assign": 2,
+        "no-return-assign": 1,
         "no-self-compare": 2,
         "no-sequences": 2,
         "no-shadow-restricted-names": 2,
@@ -230,10 +234,10 @@
             "always"
         ],
         "semi-spacing": [
-            2,
+            1,
             {
                 "before": false,
-                "after": false
+                "after": true
             }
         ],
         "space-before-blocks": [
