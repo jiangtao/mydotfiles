@@ -120,8 +120,7 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 alias cnpm="npm --registry=https://registry.npm.taobao.org"
 alias rmnm="find . -name 'node_modules'  | xargs -I {} rm -fr  {}"
 
-# yarn
-# set taobao
+# set yarn taobao 
 alias 2cyarn="yarn config set registry https://registry.npm.taobao.org"
 alias 2yarn="yarn config delete registry"
 
