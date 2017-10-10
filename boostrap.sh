@@ -54,7 +54,8 @@ apps=(
   google-chrome-canary
   firefox
   visual-studio-code
-  helm 
+  helm
+  shadowsocksx
 )
 
 # Install apps to /Applications
