@@ -9,5 +9,6 @@
 - settings.jar webstorm配置
 - [vim配置参考](http://github.com/Jerret321/vimrc)
 - [我的vs配置](https://gist.github.com/Jerret321/8a414db830ae63903082bf8e61ef626b) 基于`Settings Sync`的vs code配置 
+- .build目录 个人自动装机目录
 
-备注: 以上配置均属于个人配置，使用没问题，自定义请自行修改
+备注: 以上配置均属于个人配置，使用没问题。但如要使用，请根据自己的方式修改。
