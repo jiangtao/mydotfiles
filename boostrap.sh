@@ -53,7 +53,6 @@ brew install caskroom/cask/brew-cask
 apps=(
   google-chrome-canary
   firefox
-  visual-studio-code
   helm
   shadowsocksx
 )
