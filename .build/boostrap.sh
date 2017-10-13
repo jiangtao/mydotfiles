@@ -32,13 +32,14 @@ modules=(
   webpack
   yarn
   gulp
-#   phantomjs
-#   gtop
   eslint
   eslint-plugin-vue
   eslint-config-standard
   eslint-plugin-import
   eslint-plugin-node
+  chef-cli
+#   phantomjs
+#   gtop
 )
 
 echo "installing node modules..."
@@ -70,7 +71,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 echo "making dirs..."
 mkdir ~/places/work
-mkdir ~/places/person
+mkdir ~/places/personal
+
+# configure vim 
+
+bash vim.sh
 
 echo "Done."
 
