@@ -56,6 +56,11 @@ apps=(
   firefox
   helm
   shadowsocksx
+  # dev tools
+  vmware-fusion
+  sourcetree
+  imageoptim
+  webstorm
 )
 
 # Install apps to /Applications
