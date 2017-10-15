@@ -67,6 +67,10 @@ brew cask install --appdir="/Applications" ${apps[@]}
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# use my zshrc
+
+wget https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/.zshrc -P ~/.zshrc
+
 # create usual dirs
 
 echo "making dirs..."
@@ -76,6 +80,16 @@ mkdir ~/places/personal
 # configure vim 
 
 bash vim.sh
+
+# git global ignore
+
+wget https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/.gitignore_global -P ~/.gitignore_global
+
+# tmux config 
+
+wget https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/.tmux.conf -P ~/.tmux.conf
+
+tmux source-file ~/.tmux.conf
 
 echo "Done."
 

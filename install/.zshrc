@@ -126,6 +126,3 @@ alias 2yarn="yarn config delete registry"
 
 # chrome headless
 alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
-
-# jump.server
-alias 2applet="ssh -i ~/.ssh/huangjiangtao.pem huangjiangtao@jump.hb"
