@@ -61,6 +61,9 @@ apps=(
   sourcetree
   imageoptim
   webstorm
+  # my tools
+  qqmusic
+  kindle
 )
 
 # Install apps to /Applications
