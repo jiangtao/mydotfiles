@@ -64,6 +64,7 @@ apps=(
   # my tools
   qqmusic
   kindle
+  wewechat
 )
 
 # Install apps to /Applications
