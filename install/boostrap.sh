@@ -45,33 +45,6 @@ modules=(
 echo "installing node modules..."
 npm install -g ${modules[@]}
 
-# Install Brew Cask
-echo "Installing brew cask..."
-brew install caskroom/cask/brew-cask
-
-# Apps
-# https://caskroom.github.io/search
-apps=(
-  google-chrome-canary
-  firefox
-  helm
-  shadowsocksx
-  # dev tools
-  vmware-fusion
-  sourcetree
-  imageoptim
-  webstorm
-  # my tools
-  qqmusic
-  kindle
-  wewechat
-)
-
-# Install apps to /Applications
-
-echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
-
 # oh my zsh 
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -99,6 +72,33 @@ wget https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/.gitig
 wget https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/.tmux.conf -P ~/.tmux.conf
 
 tmux source-file ~/.tmux.conf
+
+# Install Brew Cask
+echo "Installing brew cask..."
+brew install caskroom/cask/brew-cask
+
+# Apps
+# https://caskroom.github.io/search
+apps=(
+  google-chrome-canary
+  firefox
+  helm
+  shadowsocksx
+  # dev tools
+  vmware-fusion
+  sourcetree
+  imageoptim
+  webstorm
+  # my tools
+  qqmusic
+  kindle
+  wewechat
+)
+
+# Install apps to /Applications
+
+echo "installing apps..."
+brew cask install --appdir="/Applications" ${apps[@]}
 
 echo "Done."
 
