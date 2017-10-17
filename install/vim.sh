@@ -1,4 +1,3 @@
-# 
 # configure terminal color 
 
 echo 'export TERM=xterm-256color' >> ~/.zshrc  # or ~/.zshrc if you use default bash

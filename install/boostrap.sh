@@ -49,29 +49,25 @@ npm install -g ${modules[@]}
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# use my zshrc
-
-wget https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/.zshrc -P ~/.zshrc
-
 # create usual dirs
 
 echo "making dirs..."
 mkdir ~/places/work
 mkdir ~/places/personal
 
+# clone files and conf some lns
+
+git clone https://github.com/jiangtao/mydotfiles.git ~/places/personal/mydotfiles
+
+ln -sf ~/places/personal/mydotfiles/ln/.gitignore_global ~/.gitignore_global 
+ln -sf ~/places/personal/mydotfiles/ln/.tmux.conf ~/.tmux.conf 
+ln -sf ~/places/personal/mydotfiles/ln/.zshrc ~/.zshrc 
+
+tmux source-file ~/.tmux.conf
+
 # configure vim 
 
 bash vim.sh
-
-# git global ignore
-
-wget https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/.gitignore_global -P ~/.gitignore_global
-
-# tmux config 
-
-wget https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/.tmux.conf -P ~/.tmux.conf
-
-tmux source-file ~/.tmux.conf
 
 # Install Brew Cask
 echo "Installing brew cask..."
