@@ -62,6 +62,7 @@ git clone https://github.com/jiangtao/mydotfiles.git ~/places/personal/mydotfile
 ln -sf ~/places/personal/mydotfiles/ln/.gitignore_global ~/.gitignore_global 
 ln -sf ~/places/personal/mydotfiles/ln/.tmux.conf ~/.tmux.conf 
 ln -sf ~/places/personal/mydotfiles/ln/.zshrc ~/.zshrc 
+ln -sf ~/places/personal/mydotfiles/ln/.npmrc ~/.npmrc 
 
 tmux source-file ~/.tmux.conf
 
