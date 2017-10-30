@@ -32,18 +32,17 @@ modules=(
   webpack
   yarn
   gulp
-  eslint
-  eslint-plugin-vue
-  eslint-config-standard
-  eslint-plugin-import
-  eslint-plugin-node
   chef-cli
-#   phantomjs
-#   gtop
+  
+  ########## for js ###########
+  # eslint eslint-plugin-vue eslint-config-standard eslint-plugin-import eslint-plugin-node
+  
+  ######### for css ########### 
+  # stylelint stylelint-config-standard
 )
 
 echo "installing node modules..."
-npm install -g ${modules[@]}
+npm i -g ${modules[@]}
 
 # oh my zsh 
 
