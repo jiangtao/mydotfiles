@@ -84,7 +84,8 @@ apps=(
   vmware-fusion
   sourcetree
   imageoptim
-  webstorm
+  beyond-compare
+  # webstorm
   # my tools
   qqmusic
   kindle
