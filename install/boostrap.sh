@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# jiangtao's shell for initing on macosx or ubuntu
+# jiangtao's shell for initing on macosx
 
 if test ! $(which brew); then
   echo "Installing homebrew..."
@@ -93,6 +93,7 @@ apps=(
   qqmusic
   kindle
   wewechat
+  foxmail
 )
 
 # Install apps to /Applications
