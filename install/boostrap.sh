@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# jiangtao's shell for initing on macosx or ubuntu
+
 if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -32,6 +34,7 @@ modules=(
   webpack
   yarn
   gulp
+  tldr
   chef-cli
   
   ########## for js ###########
