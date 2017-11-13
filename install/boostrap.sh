@@ -7,6 +7,11 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# modify brew mirror to http://mirrors.ustc.edu.cn/
+cd "$(brew --repo)" && git remote set-url origin https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core" && git remote set-url origin https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-core.git
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+
 brew update
 
 # install tools
@@ -16,6 +21,7 @@ tools=(
   vim 
   autojump 
   tree
+  nginx
 )
 
 brew install ${tools[@]}
