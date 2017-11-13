@@ -1,2 +1,0 @@
-# install nginx on ubuntu
-
