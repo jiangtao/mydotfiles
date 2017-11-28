@@ -50,6 +50,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+plugins=(git zsh-autosuggestions)
+
 
 # User configuration
 
@@ -126,3 +128,6 @@ alias 2yarn="yarn config delete registry"
 
 # chrome headless
 alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+
+# brew mirror change
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
