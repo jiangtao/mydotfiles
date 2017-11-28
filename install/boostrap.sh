@@ -56,6 +56,8 @@ npm i -g ${modules[@]}
 # oh my zsh 
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# add suggestion plugin
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
 # create usual dirs
 
