@@ -41,21 +41,16 @@ modules=(
   yarn
   gulp
   tldr
-  chef-cli
-  
-  ########## for js ###########
-  # eslint eslint-plugin-vue eslint-config-standard eslint-plugin-import eslint-plugin-node
-  
-  ######### for css ########### 
-  # stylelint stylelint-config-standard
+  project-next-cli
+  tree
 )
 
 echo "installing node modules..."
 npm i -g ${modules[@]}
 
 # oh my zsh 
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # add suggestion plugin
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
@@ -72,7 +67,8 @@ git clone https://github.com/jiangtao/mydotfiles.git ~/places/personal/mydotfile
 ln -sf ~/places/personal/mydotfiles/ln/.gitignore_global ~/.gitignore_global 
 ln -sf ~/places/personal/mydotfiles/ln/.tmux.conf ~/.tmux.conf 
 ln -sf ~/places/personal/mydotfiles/ln/.zshrc ~/.zshrc 
-ln -sf ~/places/personal/mydotfiles/ln/.npmrc ~/.npmrc 
+ln -sf ~/places/personal/mydotfiles/ln/.npmrc ~/.npmrc
+ln -sf ~/places/personal/mydotfiles/ln/.yarnrc ~/.yarnrc 
 
 tmux source-file ~/.tmux.conf
 
@@ -91,13 +87,16 @@ apps=(
   firefox
   helm
   shadowsocksx
-  # dev tools
-  vmware-fusion
+  
+  ## dev tools
   sourcetree
   imageoptim
   beyond-compare
+  
   # webstorm
-  # my tools
+  # vmware-fusion
+  
+  ## my tools
   qqmusic
   kindle
   wewechat
