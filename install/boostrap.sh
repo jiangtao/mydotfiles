@@ -87,6 +87,7 @@ apps=(
   firefox
   helm
   shadowsocksx
+  youdaonote
   
   ## dev tools
   sourcetree
