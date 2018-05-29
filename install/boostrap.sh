@@ -102,6 +102,7 @@ apps=(
   kindle
   wewechat
   foxmail
+  omnigraffle
 )
 
 # Install apps to /Applications
