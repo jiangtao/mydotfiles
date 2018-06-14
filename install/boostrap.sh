@@ -54,6 +54,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # add suggestion plugin
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
+# add zsh plugins
+echo "plugins=(git zsh-autosuggestions)" >> $HOME/.zshrc
+
 # create usual dirs
 
 echo "making dirs..."
