@@ -12,6 +12,10 @@ curl https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/boostr
 ## vscode配置同步
 
 - [vscode配置](https://gist.github.com/jiangtao/7df9a9284ce92e9cede4444264127b36)
-- [code-settings-sync配置步骤](https://gist.github.com/Jerret321/8a414db830ae63903082bf8e61ef626b)
+
+同步步骤
+
+- 输入指令（command + shift + p）  sync:reset
+- 下载远程配置（alt + shift + d）  输入token id, 输入gist id
 
 
