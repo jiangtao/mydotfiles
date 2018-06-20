@@ -2,6 +2,13 @@
 
 # jiangtao's shell for initing on macosx
 
+# create usual dirs
+
+echo "making dirs..."
+mkdir ~/places/work
+mkdir ~/places/personal
+
+
 if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -56,12 +63,6 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 
 # add zsh plugins
 echo "plugins=(git zsh-autosuggestions)" >> $HOME/.zshrc
-
-# create usual dirs
-
-echo "making dirs..."
-mkdir ~/places/work
-mkdir ~/places/personal
 
 # clone files and conf some lns
 
