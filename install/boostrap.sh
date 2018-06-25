@@ -29,6 +29,7 @@ tools=(
   autojump 
   tree
   nginx
+  wget
 )
 
 brew install ${tools[@]}
