@@ -30,6 +30,7 @@ tools=(
   tree
   nginx
   wget
+  gifsicle # gif tools for unix
 )
 
 brew install ${tools[@]}
