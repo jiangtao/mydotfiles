@@ -31,6 +31,7 @@ tools=(
   nginx
   wget
   gifsicle # gif tools for unix
+  mkcert # mkcert for localhost 
 )
 
 brew install ${tools[@]}
