@@ -49,7 +49,6 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 plugins=(git zsh-autosuggestions)
 
 # User configuration
@@ -97,20 +96,24 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
 
 # mongo
-alias bsondump='/usr/local/Cellar/mongodb/3.2.10/bin/bsondump'
-alias mongo='/usr/local/Cellar/mongodb/3.2.10/bin/mongo'
-alias mongod='/usr/local/Cellar/mongodb/3.2.10/bin/mongod'
-alias mongodump='/usr/local/Cellar/mongodb/3.2.10/bin/mongodump'
-alias mongoexport='/usr/local/Cellar/mongodb/3.2.10/bin/mongoexport'
-alias mongofiles='/usr/local/Cellar/mongodb/3.2.10/bin/mongofiles'
-alias mongoimport='/usr/local/Cellar/mongodb/3.2.10/bin/mongoimport'
-alias mongooplog='/usr/local/Cellar/mongodb/3.2.10/bin/mongooplog'
-alias mongoperf='/usr/local/Cellar/mongodb/3.2.10/bin/mongoperf'
-alias mongorestore='/usr/local/Cellar/mongodb/3.2.10/bin/mongorestore'
-alias mongos='/usr/local/Cellar/mongodb/3.2.10/bin/mongos'
-alias mongosniff='/usr/local/Cellar/mongodb/3.2.10/bin/mongosniff'
-alias mongostat='/usr/local/Cellar/mongodb/3.2.10/bin/mongostat'
-alias mongotop='/usr/local/Cellar/mongodb/3.2.10/bin/mongotop'
+alias bsondump='/usr/local/Cellar/mongodb/3.6.5/bin/bsondump'
+alias mongo='/usr/local/Cellar/mongodb/3.6.5/bin/mongo'
+alias mongod='/usr/local/Cellar/mongodb/3.6.5/bin/mongod'
+alias mongodump='/usr/local/Cellar/mongodb/3.6.5/bin/mongodump'
+alias mongoexport='/usr/local/Cellar/mongodb/3.6.5/bin/mongoexport'
+alias mongofiles='/usr/local/Cellar/mongodb/3.6.5/bin/mongofiles'
+alias mongoimport='/usr/local/Cellar/mongodb/3.6.5/bin/mongoimport'
+alias mongooplog='/usr/local/Cellar/mongodb/3.6.5/bin/mongooplog'
+alias mongoperf='/usr/local/Cellar/mongodb/3.6.5/bin/mongoperf'
+alias mongorestore='/usr/local/Cellar/mongodb/3.6.5/bin/mongorestore'
+alias mongos='/usr/local/Cellar/mongodb/3.6.5/bin/mongos'
+alias mongosniff='/usr/local/Cellar/mongodb/3.6.5/bin/mongosniff'
+alias mongostat='/usr/local/Cellar/mongodb/3.6.5/bin/mongostat'
+alias mongotop='/usr/local/Cellar/mongodb/3.6.5/bin/mongotop'
+
+# wrk
+alias wrk="$HOME/places/open/wrk2/wrk"
+
 # mysql
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
@@ -120,10 +123,32 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 # npm
 alias cnpm="npm --registry=https://registry.npm.taobao.org"
 alias rmnm="find . -name 'node_modules'  | xargs -I {} rm -fr  {}"
-
+alias sourcetree="open -a Sourcetree"
 # set yarn taobao 
 alias 2cyarn="yarn config set registry https://registry.npm.taobao.org"
 alias 2yarn="yarn config delete registry"
 
 # chrome headless
 alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias dfe="bash $HOME/places/work/shell/fe.deploy.sh"
+alias server="python -m SimpleHTTPServer"
+plugins=(git zsh-autosuggestions)
+export TERM=xterm-256color
+plugins=(git zsh-autosuggestions)
+export TERM=xterm-256color
+plugins=(git zsh-autosuggestions)
+export TERM=xterm-256color
+plugins=(git zsh-autosuggestions)
+export TERM=xterm-256color
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+plugins=(git zsh-autosuggestions)
+export TERM=xterm-256color
+plugins=(git zsh-autosuggestions)
+export TERM=xterm-256color
+plugins=(git zsh-autosuggestions)
+export TERM=xterm-256color
+export TERM=xterm-256color
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
