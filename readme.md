@@ -18,4 +18,6 @@ curl https://raw.githubusercontent.com/jiangtao/mydotfiles/master/install/boostr
 - 输入指令（command + shift + p）  sync:reset
 - 下载远程配置（alt + shift + d）  输入token id, 输入gist id
 
+## 备注
 
+建议参考，不建议完全使用，喜欢/有用请star，千万别fork
