@@ -32,6 +32,8 @@ tools=(
   wget
   gifsicle # gif tools for unix
   mkcert # mkcert for localhost 
+  bat # cat with line number
+  fd # better find command
 )
 
 brew install ${tools[@]}
