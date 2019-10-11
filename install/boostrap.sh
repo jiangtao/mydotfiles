@@ -34,6 +34,7 @@ tools=(
   mkcert # mkcert for localhost 
   bat # cat with line number
   fd # better find command
+  timothyye/tap/ydict # youdao dict
 )
 
 brew install ${tools[@]}
