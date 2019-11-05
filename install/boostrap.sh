@@ -104,6 +104,8 @@ apps=(
   imageoptim
   beyond-compare
   
+  upic # 通用图床配置
+  
   # webstorm
   # vmware-fusion
   
