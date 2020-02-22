@@ -115,6 +115,7 @@ apps=(
   wewechat
   foxmail
   omnigraffle
+  # HandBrake # compress video and audio 
 )
 
 # Install apps to /Applications
