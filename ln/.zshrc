@@ -96,20 +96,20 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
 
 # mongo
-alias bsondump='/usr/local/Cellar/mongodb/3.6.5/bin/bsondump'
-alias mongo='/usr/local/Cellar/mongodb/3.6.5/bin/mongo'
-alias mongod='/usr/local/Cellar/mongodb/3.6.5/bin/mongod'
-alias mongodump='/usr/local/Cellar/mongodb/3.6.5/bin/mongodump'
-alias mongoexport='/usr/local/Cellar/mongodb/3.6.5/bin/mongoexport'
-alias mongofiles='/usr/local/Cellar/mongodb/3.6.5/bin/mongofiles'
-alias mongoimport='/usr/local/Cellar/mongodb/3.6.5/bin/mongoimport'
-alias mongooplog='/usr/local/Cellar/mongodb/3.6.5/bin/mongooplog'
-alias mongoperf='/usr/local/Cellar/mongodb/3.6.5/bin/mongoperf'
-alias mongorestore='/usr/local/Cellar/mongodb/3.6.5/bin/mongorestore'
-alias mongos='/usr/local/Cellar/mongodb/3.6.5/bin/mongos'
-alias mongosniff='/usr/local/Cellar/mongodb/3.6.5/bin/mongosniff'
-alias mongostat='/usr/local/Cellar/mongodb/3.6.5/bin/mongostat'
-alias mongotop='/usr/local/Cellar/mongodb/3.6.5/bin/mongotop'
+alias bsondump='/usr/local/etc/mongodb/bin/bsondump'
+alias mongo='/usr/local/etc/mongodb/bin/mongo'
+alias mongod='/usr/local/etc/mongodb/bin/mongod'
+alias mongodump='/usr/local/etc/mongodb/bin/mongodump'
+alias mongoexport='/usr/local/etc/mongodb/bin/mongoexport'
+alias mongofiles='/usr/local/etc/mongodb/bin/mongofiles'
+alias mongoimport='/usr/local/etc/mongodb/bin/mongoimport'
+alias mongooplog='/usr/local/etc/mongodb/bin/mongooplog'
+alias mongoperf='/usr/local/etc/mongodb/bin/mongoperf'
+alias mongorestore='/usr/local/etc/mongodb/bin/mongorestore'
+alias mongos='/usr/local/etc/mongodb/bin/mongos'
+alias mongosniff='/usr/local/etc/mongodb/bin/mongosniff'
+alias mongostat='/usr/local/etc/mongodb/bin/mongostat'
+alias mongotop='/usr/local/etc/mongodb/bin/mongotop'
 
 # wrk
 alias wrk="$HOME/places/open/wrk2/wrk"
@@ -118,16 +118,14 @@ alias wrk="$HOME/places/open/wrk2/wrk"
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 # npm
-alias cnpm="npm --registry=https://registry.npm.taobao.org"
 alias rmnm="find . -name 'node_modules'  | xargs -I {} rm -fr  {}"
 alias sourcetree="open -a Sourcetree"
 # set yarn taobao 
 alias 2cyarn="yarn config set registry https://registry.npm.taobao.org"
 alias 2yarn="yarn config delete registry"
-
+alias ggfetch="git stash save local && git fetch && git rebase origin master"
 # chrome headless
 alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -151,4 +149,35 @@ plugins=(git zsh-autosuggestions)
 export TERM=xterm-256color
 export TERM=xterm-256color
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:/usr/local/bin
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+alias w_dev="./node_modules/.bin/cross-env NODE_ENV=development DEPLOY=dev yarn build && scp -r  dist pa.hexyun:/mnt/wuwei"
+alias w_test="yarn run deploy:test && scp -r  dist pa.hexyun:/mnt/wuwei/pre"
+alias w_prod="yarn run deploy:prod && scp -r  dist pa.hexyun:/mnt/wuwei/production"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+eval 
+            fuck () {
+                TF_PYTHONIOENCODING=$PYTHONIOENCODING;
+                export TF_SHELL=zsh;
+                export TF_ALIAS=fuck;
+                TF_SHELL_ALIASES=$(alias);
+                export TF_SHELL_ALIASES;
+                TF_HISTORY="$(fc -ln -10)";
+                export TF_HISTORY;
+                export PYTHONIOENCODING=utf-8;
+                TF_CMD=$(
+                    thefuck THEFUCK_ARGUMENT_PLACEHOLDER $@
+                ) && eval $TF_CMD;
+                unset TF_HISTORY;
+                export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
+                test -n "$TF_CMD" && print -s $TF_CMD
+            }
+        
+alias python=/usr/local/bin/python3
+alias editor_dev="scp -r  dist/index.html dist/static   wuwei:/mnt/editor-front"
+alias wuwei_dev="scp -r dist/* wuwei:/mnt/wuwei-front/"
+alias editor_prod="scp -r  dist/index.html dist/static   wuwei-prod:/mnt/editor-front"
+alias wuwei_prod="scp -r dist/* wuwei-prod:/mnt/wuwei-front/"
