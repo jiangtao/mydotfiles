@@ -5,6 +5,8 @@
 # create usual dirs
 
 echo "making dirs..."
+
+mkdir ~/places
 mkdir ~/places/work
 mkdir ~/places/personal
 
