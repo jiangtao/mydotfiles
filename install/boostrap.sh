@@ -84,11 +84,11 @@ tmux source-file ~/.tmux.conf
 
 # configure vim 
 
-bash vim.sh
+# bash vim.sh
 
 # Install Brew Cask
 echo "Installing brew cask..."
-brew install caskroom/cask/brew-cask
+brew install homebrew/cask-cask
 
 # Apps
 # https://caskroom.github.io/search
