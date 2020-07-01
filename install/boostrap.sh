@@ -50,7 +50,7 @@ nvm alias default stable
 # https://stackoverflow.com/questions/1335815/how-to-slice-an-array-in-bash  bash copy array
 
 modules=(
-  webpack
+#   webpack
   yarn
   gulp
   tldr
@@ -93,11 +93,11 @@ brew install caskroom/cask/brew-cask
 # Apps
 # https://caskroom.github.io/search
 apps=(
-  google-chrome-canary
+#   google-chrome-canary
   firefox
   helm
   shadowsocksx
-  youdaonote
+#   youdaonote
   
   ## dev tools
   sourcetree
@@ -112,7 +112,7 @@ apps=(
   ## my tools
   qqmusic
   kindle
-  wewechat
+#   wewechat
   foxmail
   omnigraffle
   # HandBrake # compress video and audio 
