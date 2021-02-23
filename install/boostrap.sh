@@ -90,7 +90,6 @@ tmux source-file ~/.tmux.conf
 
 # Install Brew Cask
 echo "Installing brew cask..."
-brew install homebrew/cask-cask
 
 # Apps
 # https://caskroom.github.io/search
@@ -123,7 +122,8 @@ apps=(
 # Install apps to /Applications
 
 echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
+# latest brew use option cask install app
+brew install --cask --appdir="/Applications" ${apps[@]} 
 
 echo "Done."
 
