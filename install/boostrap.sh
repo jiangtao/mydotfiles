@@ -58,6 +58,7 @@ modules=(
   tldr
   project-next-cli
   tree
+  tig
 )
 
 echo "installing node modules..."
