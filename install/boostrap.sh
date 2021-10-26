@@ -98,8 +98,10 @@ apps=(
 #   google-chrome-canary
   firefox
   helm
-  shadowsocksx
+#  shadowsocksx
 #   youdaonote
+  clash  # instead of shadowsocks
+  aText
   
   ## dev tools
   sourcetree
