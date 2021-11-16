@@ -96,20 +96,20 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
 
 # mongo
-alias bsondump='/usr/local/etc/mongodb/bin/bsondump'
-alias mongo='/usr/local/etc/mongodb/bin/mongo'
-alias mongod='/usr/local/etc/mongodb/bin/mongod'
-alias mongodump='/usr/local/etc/mongodb/bin/mongodump'
-alias mongoexport='/usr/local/etc/mongodb/bin/mongoexport'
-alias mongofiles='/usr/local/etc/mongodb/bin/mongofiles'
-alias mongoimport='/usr/local/etc/mongodb/bin/mongoimport'
+alias bsondump='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/bsondump'
+alias mongo='/usr/local/Cellar/mongodb-community/4.4.0/bin/mongo'
+alias mongod='/usr/local/Cellar/mongodb-community/4.4.0/bin/mongod'
+alias mongodump='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongodump'
+alias mongoexport='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongoexport'
+alias mongofiles='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongofiles'
+alias mongoimport='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongoimport'
 alias mongooplog='/usr/local/etc/mongodb/bin/mongooplog'
 alias mongoperf='/usr/local/etc/mongodb/bin/mongoperf'
-alias mongorestore='/usr/local/etc/mongodb/bin/mongorestore'
-alias mongos='/usr/local/etc/mongodb/bin/mongos'
+alias mongorestore='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongorestore'
+alias mongos='/usr/local/Cellar/mongodb-community/4.4.0/bin/mongos'
 alias mongosniff='/usr/local/etc/mongodb/bin/mongosniff'
-alias mongostat='/usr/local/etc/mongodb/bin/mongostat'
-alias mongotop='/usr/local/etc/mongodb/bin/mongotop'
+alias mongostat='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongostat'
+alias mongotop='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongotop'
 
 # wrk
 alias wrk="$HOME/places/open/wrk2/wrk"
@@ -149,7 +149,7 @@ plugins=(git zsh-autosuggestions)
 export TERM=xterm-256color
 export TERM=xterm-256color
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
-export PATH=$PATH:/usr/local/go/bin:/usr/local/bin
+export PATH=$PATH:/usr/local/go/bin:/usr/local/bin:$HOME/bin
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 alias w_dev="./node_modules/.bin/cross-env NODE_ENV=development DEPLOY=dev yarn build && scp -r  dist pa.hexyun:/mnt/wuwei"
@@ -181,3 +181,42 @@ alias editor_dev="scp -r  dist/index.html dist/static   wuwei:/mnt/editor-front"
 alias wuwei_dev="scp -r dist/* wuwei:/mnt/wuwei-front/"
 alias editor_prod="scp -r  dist/index.html dist/static   wuwei-prod:/mnt/editor-front"
 alias wuwei_prod="scp -r dist/* wuwei-prod:/mnt/wuwei-front/"
+plugins=(git zsh-autosuggestions)
+
+alias mnpm="npm --registry=http://r.npm.sankuai.com \
+--cache=$HOME/.cache/mnpm \
+--disturl=http://npm.sankuai.com/mirrors/node \
+--userconfig=$HOME/.mnpmrc"
+alias ws="open -a WebStorm"
+alias st="open -a Sourcetree"
+export LC_ALL=en_US.UTF-8
+export TERM=xterm-256color 
+alias gc="git checkout"
+alias gcb="git checkout -b"
+alias gp="git push"
+alias ynpm="yarn config set registry https://registry.npm.taobao.org"
+alias ysankuai="yarn config set registry http://r.npm.sankuai.com"
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+--cache=$HOME/.npm/.cache/cnpm \
+--disturl=https://npm.taobao.org/dist \
+--userconfig=$HOME/.cnpmrc"
+alias cht="curl cht.sh/"
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export LDFLAGS=-L/usr/local/opt/tcl-tk/lib
+export CPPFLAGS=-I/usr/local/opt/tcl-tk/include
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export LDFLAGS=-L/usr/local/opt/python@3.8/lib
+alias python=python2
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export PATH=$PATH:/usr/local/mysql/bin
+nvm use v14.17.3
+
+export PNPM_HOME="/Users/jth/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+source /Users/jth/.cargo/env
