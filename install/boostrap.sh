@@ -85,6 +85,16 @@ ln -sf ~/places/personal/mydotfiles/ln/.yarnrc ~/.yarnrc
 
 tmux source-file ~/.tmux.conf
 
+# configure rust env
+
+if test ! $(which rustup); then
+  echo "Initing Rust Env..."
+  ruby -e "$(curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh)"
+  echo source $HOME/.cargo/env >> ~/.zshrc
+fi
+
+source $HOME/.cargo/env
+
 # configure vim 
 
 # bash vim.sh
