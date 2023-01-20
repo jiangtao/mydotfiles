@@ -37,6 +37,9 @@ tools=(
   bat # cat with line number
   fd # better find command
   timothyye/tap/ydict # youdao dict
+  jq
+  koekeishiya/formulae/skhd
+  koekeishiya/formulae/yabai
 )
 
 brew install ${tools[@]}
@@ -82,6 +85,8 @@ ln -sf ~/places/personal/mydotfiles/ln/.tmux.conf ~/.tmux.conf
 ln -sf ~/places/personal/mydotfiles/ln/.zshrc ~/.zshrc 
 ln -sf ~/places/personal/mydotfiles/ln/.npmrc ~/.npmrc
 ln -sf ~/places/personal/mydotfiles/ln/.yarnrc ~/.yarnrc 
+ln -sf ~/places/personal/mydotfiles/ln/.npmrc ~/.skhdrc
+ln -sf ~/places/personal/mydotfiles/ln/.yarnrc ~/.yabairc
 
 tmux source-file ~/.tmux.conf
 

@@ -126,6 +126,9 @@ alias sourcetree="open -a Sourcetree"
 alias 2cyarn="yarn config set registry https://registry.npm.taobao.org"
 alias 2yarn="yarn config delete registry"
 alias ggfetch="git stash save local && git fetch && git rebase origin master"
+alias gitc="git commit -m"
+alias gitsc="git commit -S -m"
+
 # chrome headless
 alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -201,14 +204,12 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --disturl=https://npm.taobao.org/dist \
 --userconfig=$HOME/.cnpmrc"
 alias cht="curl cht.sh/"
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export LDFLAGS=-L/usr/local/opt/tcl-tk/lib
 export CPPFLAGS=-I/usr/local/opt/tcl-tk/include
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export LDFLAGS=-L/usr/local/opt/python@3.8/lib
-alias python=python2
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 export PATH=$PATH:/usr/local/mysql/bin
 nvm use v14.17.3
@@ -220,3 +221,17 @@ export PATH="$PNPM_HOME:$PATH"
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 source /Users/jth/.cargo/env
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# fnm
+export PATH=/Users/jth/.fnm:$PATH
+eval "`fnm env`"
+export GPG_TTY=$(tty)
+
+export GO111MODULE=on
+function ll {
+  cd "$(llama "$@")"
+}
+export EDITOR=vim
+

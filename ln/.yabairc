@@ -1,0 +1,41 @@
+#!/usr/bin/env sh
+sudo yabai --loda-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+yabai -m config layout                       bsp
+yabai -m config window_placement             second_child
+
+yabai -m config top_padding                  3
+yabai -m config bottom_padding               3
+yabai -m config left_padding                 3
+yabai -m config right_padding                3
+yabai -m config window_gap                   10
+
+yabai -m config auto_balance                 off
+yabai -m config split_ratio                 0.50
+
+yabai -m config window_topmost               on
+yabai -m config window_shadow                float
+
+
+# Web browsers
+yabai -m rule --add app="^Google Chrome|Firefox$" space=1
+# Text editors
+yabai -m rule --add app="^(Code|RStudio)$" space=2
+# Jetbrains app
+ideAps="^(IntelliJ IDEA|WebStorm|RubyMine|PyCharm|DataGrip|Toolbox)$"
+disableApps="^(Spotify|Amazon Music|Preferences|Slack|WhatsApp|Microsoft Teams|微信|大象|DeepL|系统偏好设置|提醒事项|关于本机|音乐|SpaceLauncher|licecap)$"
+yabai -m rule --add app="${ideAps}" space=3  manage=off
+yabai -m rule --add app="${disableApps}" manage=off
+# Terminal
+yabai -m rule --add app="^(Alacritty)$" space=4
+
+
+# 窗口透明度设置
+yabai -m config window_opacity               on
+# 配置活动窗口不透明度
+yabai -m config active_window_opacity        1            
+yabai -m config normal_window_opacity        0.95
+yabai -m config window_opacity_duration      0.0
+
+echo "yabai configuration loaded.."
