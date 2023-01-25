@@ -10,9 +10,9 @@ hyper - s : open "x-apple.systempreferences:"
 hyper - n : yabai -m space --create && yabai -m space --focus last
 # focus window in bsp mode
 alt - left: yabai -m window --focus west
-alt - up: yabai -m window --focus south
+alt - down: yabai -m window --focus south
 
-alt - down: yabai -m window --focus north
+alt - up: yabai -m window --focus north
 alt - right: yabai -m window --focus east
 
 

@@ -234,4 +234,4 @@ function ll {
   cd "$(llama "$@")"
 }
 export EDITOR=vim
-
+sudo yabai --load-sa
