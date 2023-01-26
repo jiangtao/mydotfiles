@@ -234,4 +234,6 @@ function ll {
   cd "$(llama "$@")"
 }
 export EDITOR=vim
-sudo yabai --load-sa
+# Please run the shell with root user, ignore it in zsh config
+yabai --load-sa
+
