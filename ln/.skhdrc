@@ -6,7 +6,7 @@ hyper - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 hyper - f  : yabai -m window --toggle zoom-fullscreen
 
 # make top
-hyper - t : yabai -m window --toggle topmost
+hyper - p : yabai -m window --toggle topmost
 
 # Application Shortcuts
 hyper - s : open "x-apple.systempreferences:"
