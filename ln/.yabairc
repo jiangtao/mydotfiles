@@ -30,7 +30,6 @@ yabai -m rule --add app="${disableApps}" manage=off
 # Terminal
 yabai -m rule --add app="^(Alacritty)$" space=4
 
-
 # 窗口透明度设置
 yabai -m config window_opacity               on
 # 配置活动窗口不透明度
