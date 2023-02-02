@@ -24,7 +24,7 @@ yabai -m rule --add app="^Google Chrome|Firefox$" space=1
 yabai -m rule --add app="^(Code|RStudio)$" space=2
 # Jetbrains app
 ideAps="^(IntelliJ IDEA|RubyMine|PyCharm|DataGrip|Toolbox)$"
-disableApps="^(Spotify|Amazon Music|Preferences|Slack|WhatsApp|Microsoft Teams|DeepL|系统偏好设置|提醒事项|关于本机|音乐|SpaceLauncher|licecap)$"
+disableApps="^(JetBrains Toolbox|Spotify|Amazon Music|Preferences|Slack|WhatsApp|Microsoft Teams|DeepL|系统偏好设置|提醒事项|关于本机|音乐|SpaceLauncher|licecap)$"
 yabai -m rule --add app="${ideAps}" space=3  manage=off
 yabai -m rule --add app="${disableApps}" manage=off
 # Terminal

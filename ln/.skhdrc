@@ -49,18 +49,11 @@ hyper - 6  : yabai -m window --grid 1:2:1:1:1:1
 # 4分屏左上
 hyper - 1 : yabai -m window --grid 2:2:0:0:1:1
 # 4分屏右上
-hyper - 2 : yabai -m window --grid 2:2:0:1:1:1
-# 4分屏左下
-hyper - 4 : yabai -m window --grid 2:2:1:0:1:1
+hyper - 2 : yabai -m window --grid 2:2:1:0:1:1
 # 4分屏右下
-hyper - 3 : yabai -m window --grid 2:2:1:1:1:1
-# 3分屏左1
-hyper - 9 : yabai -m window --grid 1:3:0:0:1:1
-
-# 3分屏右2
-hyper - 7 : yabai -m window --grid 1:3:1:0:2:1
-# 3分屏右1
-hyper - 8 : yabai -m window --grid 1:3:3:0:1:1
+hyper - 3: yabai -m window --grid 2:2:1:1:1:1
+# 4分屏左下
+hyper - 4 : yabai -m window --grid 2:2:0:1:1:1
 # 9分屏居中
 hyper - 0 : yabai -m window --grid 3:3:1:1:1:1
 
