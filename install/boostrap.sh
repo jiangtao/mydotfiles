@@ -40,6 +40,7 @@ tools=(
   jq
   koekeishiya/formulae/skhd
   koekeishiya/formulae/yabai
+  thefuck # fuck the wrong spell
 )
 
 brew install ${tools[@]}
