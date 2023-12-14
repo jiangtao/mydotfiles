@@ -13,7 +13,7 @@ mkdir ~/places/personal
 
 if test ! $(which brew); then
   echo "Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # modify brew mirror to http://mirrors.ustc.edu.cn/
@@ -58,6 +58,7 @@ nvm alias default stable
 modules=(
 #   webpack
   yarn
+  pnpm
   gulp
   tldr
   project-next-cli
@@ -111,7 +112,6 @@ echo "Installing brew cask..."
 # Apps
 # https://caskroom.github.io/search
 apps=(
-#   google-chrome-canary
   firefox
   helm
 #  shadowsocksx
@@ -130,10 +130,8 @@ apps=(
   # vmware-fusion
   
   ## my tools
-  qqmusic
   kindle
 #   wewechat
-  foxmail
   omnigraffle
   # HandBrake # compress video and audio 
 )
