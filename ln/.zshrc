@@ -184,7 +184,6 @@ alias gc="git checkout"
 alias gcb="git checkout -b"
 alias gp="git push"
 alias ynpm="yarn config set registry https://registry.npm.taobao.org"
-alias ysankuai="yarn config set registry http://r.npm.sankuai.com"
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --cache=$HOME/.npm/.cache/cnpm \
 --disturl=https://npm.taobao.org/dist \
