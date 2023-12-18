@@ -67,6 +67,7 @@ ln -sf ~/places/personal/mydotfiles/ln/.npmrc ~/.npmrc
 ln -sf ~/places/personal/mydotfiles/ln/.yarnrc ~/.yarnrc 
 ln -sf ~/places/personal/mydotfiles/ln/.skhdrc ~/.skhdrc
 ln -sf ~/places/personal/mydotfiles/ln/.yabairc ~/.yabairc
+ln -sf ~/places/personal/mydotfiles/ln/.npmrc ~/.npmrc
 
 
 # 启动 skhd
