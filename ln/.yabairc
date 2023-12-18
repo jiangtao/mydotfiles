@@ -2,7 +2,7 @@
 sudo yabai --loda-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
-yabai -m config layout                       bsp
+yabai -m config layout                       float
 yabai -m config window_placement             second_child
 
 yabai -m config top_padding                  3

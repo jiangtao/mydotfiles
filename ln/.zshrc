@@ -96,20 +96,20 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
 
 # mongo
-alias bsondump='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/bsondump'
-alias mongo='/usr/local/Cellar/mongodb-community/4.4.0/bin/mongo'
-alias mongod='/usr/local/Cellar/mongodb-community/4.4.0/bin/mongod'
-alias mongodump='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongodump'
-alias mongoexport='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongoexport'
-alias mongofiles='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongofiles'
-alias mongoimport='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongoimport'
-alias mongooplog='/usr/local/etc/mongodb/bin/mongooplog'
-alias mongoperf='/usr/local/etc/mongodb/bin/mongoperf'
-alias mongorestore='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongorestore'
-alias mongos='/usr/local/Cellar/mongodb-community/4.4.0/bin/mongos'
-alias mongosniff='/usr/local/etc/mongodb/bin/mongosniff'
-alias mongostat='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongostat'
-alias mongotop='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongotop'
+# alias bsondump='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/bsondump'
+# alias mongo='/usr/local/Cellar/mongodb-community/4.4.0/bin/mongo'
+# alias mongod='/usr/local/Cellar/mongodb-community/4.4.0/bin/mongod'
+# alias mongodump='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongodump'
+# alias mongoexport='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongoexport'
+# alias mongofiles='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongofiles'
+# alias mongoimport='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongoimport'
+# alias mongooplog='/usr/local/etc/mongodb/bin/mongooplog'
+# alias mongoperf='/usr/local/etc/mongodb/bin/mongoperf'
+# alias mongorestore='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongorestore'
+# alias mongos='/usr/local/Cellar/mongodb-community/4.4.0/bin/mongos'
+# alias mongosniff='/usr/local/etc/mongodb/bin/mongosniff'
+# alias mongostat='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongostat'
+# alias mongotop='/usr/local/Cellar/mongodb-database-tools/100.1.1/bin/mongotop'
 
 # wrk
 alias wrk="$HOME/places/open/wrk2/wrk"
@@ -134,22 +134,8 @@ alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Ch
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias dfe="bash $HOME/places/work/shell/fe.deploy.sh"
 alias server="python -m SimpleHTTPServer"
-plugins=(git zsh-autosuggestions)
-export TERM=xterm-256color
-plugins=(git zsh-autosuggestions)
-export TERM=xterm-256color
-plugins=(git zsh-autosuggestions)
-export TERM=xterm-256color
-plugins=(git zsh-autosuggestions)
-export TERM=xterm-256color
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-plugins=(git zsh-autosuggestions)
-export TERM=xterm-256color
-plugins=(git zsh-autosuggestions)
-export TERM=xterm-256color
-plugins=(git zsh-autosuggestions)
-export TERM=xterm-256color
 export TERM=xterm-256color
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin:/usr/local/bin:$HOME/bin
@@ -212,7 +198,6 @@ export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export LDFLAGS=-L/usr/local/opt/python@3.8/lib
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 export PATH=$PATH:/usr/local/mysql/bin
-nvm use v14.17.3
 
 export PNPM_HOME="/Users/jth/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
@@ -220,7 +205,6 @@ export PATH="$PNPM_HOME:$PATH"
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
-source /Users/jth/.cargo/env
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -236,4 +220,4 @@ function ll {
 export EDITOR=vim
 # Please run the shell with root user, ignore it in zsh config
 yabai --load-sa
-
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} history -a"
