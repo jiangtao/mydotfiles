@@ -113,6 +113,8 @@ echo "installing apps..."
 # latest brew use option cask install app
 brew install --cask --appdir="/Applications" ${apps[@]} 
 
+bash ./ai.sh
+
 echo "Done."
 
 
