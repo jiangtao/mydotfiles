@@ -1,0 +1,75 @@
+# Shared, portable Codex settings managed by mydotfiles.
+# Machine-specific settings stay in ~/.codex/config.toml outside the managed blocks.
+
+model = "gpt-5.6-sol"
+model_reasoning_effort = "high"
+supports_websockets = true
+
+# __MYDOTFILES_TABLES__
+
+[features.multi_agent_v2]
+tool_namespace = "agents"
+
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 3
+
+[mcp_servers]
+
+[mcp_servers.tempad-dev]
+type = "stdio"
+command = "npx"
+args = ["-y", "@tempad-dev/mcp@latest"]
+enabled = false
+
+[plugins."documents@openai-primary-runtime"]
+enabled = false
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = false
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = false
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = false
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = false
+
+[plugins."visualize@openai-bundled"]
+enabled = false
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = false
+
+[plugins."sites@openai-curated-remote"]
+enabled = false
+
+[plugins."deep-research-work@openai-curated-remote"]
+enabled = false
+
+[plugins."plugin-management@openai-curated-remote"]
+enabled = false
+
+[plugins."openai-templates@openai-curated-remote"]
+enabled = false
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."unified-computer-use@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = false
+
+[features]
+multi_agent = true
+default_mode_request_user_input = true
