@@ -23,9 +23,6 @@
 .agents/skills/finish-feature/SKILL.md
 .agents/skills/finish-hotfix/SKILL.md
 .agents/skills/finish-release/SKILL.md
-.agents/skills/grill-me/SKILL.md
-.agents/skills/grill-with-docs/SKILL.md
-.agents/skills/grilling/SKILL.md
 .agents/skills/handoff/SKILL.md
 .agents/skills/hierarchical/SKILL.md
 .agents/skills/huashu-design/SKILL.md
